@@ -1,0 +1,72 @@
+*,
+html,
+body {
+  font-size: 18px;
+  margin: 0;
+  font-family: "Nanum Myeongjo", serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.panel {
+  margin: 0 auto;
+}
+.title {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  font-size: 24px;
+}
+.questionBox {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 2px;
+}
+.score-board,
+.questionBox,
+.title {
+  padding: 10px;
+  margin: 10px;
+}
+.score-board {
+  text-align: center;
+}
+.playBtn {
+  margin: 20px;
+  padding: 20px 30px;
+}
+.btn {
+  margin: 10px;
+  border-radius: 15px;
+  padding: 5px 25px;
+}
+/* single ques app*/
+.singleQuiz {
+  background: #a833ff;
+  padding: 10px;
+  color: #fff;
+  margin: 20px;
+}
+.que {
+  text-align: center;
+}
+.ansGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ans-option {
+  flex: 0 45%;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  color: #a833ff;
+  border: 1px solid #a833ff;
+  margin: 15px;
+}
