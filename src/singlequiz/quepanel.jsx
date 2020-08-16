@@ -15,17 +15,10 @@ function QuePanel() {
         setQuestions(data.results);
       });
   }, []);
+  const handleAnswer = (ans) => {};
   return questions.length > 0 ? (
     <div className="col-md-12">
-      <div className="que">
-        <h4>{questions[0].question}</h4>
-      </div>
-      <div className="ansGroup">
-        <div className="ans-option">{questions[0].correct_answer}</div>
-        <div className="ans-option">b</div>
-        <div className="ans-option">c</div>
-        <div className="ans-option">d</div>
-      </div>
+      <QueBox data={questions[0]} handleAnswers={handleAnswer()} />
     </div>
   ) : (
     <p>Hey, we are loading ...</p>
